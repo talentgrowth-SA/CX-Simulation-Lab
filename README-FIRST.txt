@@ -1,12 +1,5 @@
-CX SIMULATION LAB V12 — LIVE PACKAGE
+TALENT GROWTH — CX SIMULATION LAB
 
-تم ربط هذه الحزمة فعليًا بمشروع Supabase الخاص بالبرنامج، وتم إنشاء قاعدة البيانات والصلاحيات مركزيًا.
-
-للرفع على GitHub Pages استخدم فقط:
-1) index.html
-2) admin.html
-3) cx-config.js
-4) .nojekyll
-
-اقرأ DEPLOYMENT-GUIDE.md قبل الإطلاق.
-لا تضف أي Service Role Key إلى GitHub.
+Independent project: mqgyfzblylljbgilrtst
+Learner and admin portals share only the institute database. No old platform accounts, codes or learner records were copied.
+Read DEPLOYMENT-GUIDE.md. Never publish database passwords or service-role/secret keys.

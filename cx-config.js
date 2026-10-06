@@ -1,8 +1,8 @@
 window.CX_CLOUD_CONFIG = {
-  supabaseUrl: "https://cdvumwodsyygiqqdmuij.supabase.co",
-  publishableKey: "sb_publishable_QxRYODcf28-lriKu_FIpfw_5ZP4G3Q6",
+  supabaseUrl: "https://mqgyfzblylljbgilrtst.supabase.co",
+  publishableKey: "sb_publishable_NB8HDvjm8NstOrUtrMFc0g_h-5e-ATi",
   requireCloud: true,
-  programCode: "CX-EXCELLENCE-2026",
+  programCode: "TG-CX-EXCELLENCE-2026",
   adminRefreshSeconds: 15
 };
 
@@ -337,7 +337,7 @@ window.CX_CLOUD_CONFIG = {
 (function installCXV124(){
   'use strict';
 
-  const isAdminPage = /\/admin\.html$/i.test(location.pathname);
+  const isAdminPage = /\/admin\.html$/i.test(location.pathname) || new URLSearchParams(location.search).has('adminParticipant');
   const params = new URLSearchParams(location.search);
   const isPreview = params.get('preview') === '1';
   const isAdminReport = () => !!window.CX_ADMIN_REPORT_MODE;
@@ -361,8 +361,8 @@ window.CX_CLOUD_CONFIG = {
           {
             storageKey:
               isAdminPage
-                ? 'cxlab-admin-auth-v124'
-                : 'cxlab-learner-auth-v124'
+                ? 'tg-cxlab-admin-auth-v1'
+                : 'tg-cxlab-learner-auth-v1'
           }
         );
 

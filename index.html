@@ -869,7 +869,7 @@ html[dir=rtl] .eyebrow,html[dir=rtl] .rail-card h4,html[dir=rtl] .kpi .lbl{font-
    Isolated so an LMS / xAPI / REST adapter can replace it without touching
    the rest of the app. ------------------------------------------------- */
 const Store = (() => {
-  const KEY = 'cxlab:v1';
+  const KEY = new URLSearchParams(location.search).has('adminParticipant') ? 'tg-cxlab:admin-report:v1' : 'tg-cxlab:v1';
   const mem = {};
   const hasKV = typeof window !== 'undefined' && window.storage && typeof window.storage.get === 'function';
   const hasLS = typeof window !== 'undefined' && (()=>{ try{ return !!window.localStorage; }catch(e){ return false; } })();
