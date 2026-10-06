@@ -1,0 +1,1 @@
+window.CX_CLOUD_CONFIG = {supabaseUrl:'https://mqgyfzblylljbgilrtst.supabase.co',publishableKey:'sb_publishable_NB8HDvjm8NstOrUtrMFc0g_h-5e-ATi',requireCloud:true,programCode:'TG-CX-EXCELLENCE-2026',adminRefreshSeconds:15};
